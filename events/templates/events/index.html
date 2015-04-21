@@ -1,0 +1,9 @@
+{% if event_list %}
+    <ul>
+    {% for event in latest_question_list %}
+        <li><a href="/events/{{ event.id }}/">{{ event.date }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No events are available.</p>
+{% endif %}
